@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #030027;
+  margin: 0;
+  padding: 0;
+  font-family: 'Microsoft Yi Baiti', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: white;
+  position: relative;
+}
+
+.input{ 
+	text-align: center; 
+	margin: 370px; 
+}
+
+input[type="text"]{
+	height: 50px; 
+	width:500px; 
+	background-color: white;
+	border: none; 
+	border-radius: 2px;
+	color: black;
+	font-size: 15px;
+	padding: 10px 20px;
+}
+
+input[type="submit"]{
+	height: 50px; 
+	width:100px; 
+	background-color: white;
+	border: none; 
+	border-radius: 2px;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 10px 20px;
+}
+
+.display {
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+
+h1{
+	width:100%; 
+	margin-top: 280px;
+	position: absolute;
+	font-size: 2vw;
+	color: white; 
+	text-align: center;
+	letter-spacing: 18px;
+	padding: 15px;
+}
+
+b{
+	font-size: 20px;
+	padding: 20px;
+}
+
+
+li {
+  display: block;
+  padding:20px;
+  float: right;
+  font-size: 20px;
+  color: white;
+  position: center;
+}
+
+li:hover { 
+text-decoration: underline;
+}
+
+#time{
+	width: 100%;
+	position: absolute;
+	font-size: 100px; 
+	color: white; 
+	text-align: center;
+	margin-top: 50px;
+	font-family:'OCR A', sans-serif;
+		
+}
+

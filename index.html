@@ -2,11 +2,34 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Template</title>
+		<title>SPACE X Landing Interface </title>
 		<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
-		<script src="main.js" defer></script>
+		<script src="scripts/main.js" defer></script>
 	</head>
-	<body>
-		<h1>Webpage template</h1>
-	</body>
+	
+	 <header>
+		<ul>
+		 <b> S p a c e X </b>
+		  <li><a >EARTH</a></li>
+		  <li><a >Metrics</a></li>
+		  <li><a >Supplies</a></li>
+		  <li><a >Ships Environment</a></li>
+		  <li><a>Ships Parameters</a></li>
+		</ul>
+	 </header>
+	 
+	 
+	 <body onload="earthClock()">
+	 <div id="time"></div>
+	 <h1> EARTH WEATHER CONDITIONS </h1>
+	 <div class="input">
+	  <input type="text" class="inputValue" placeholder="Enter A City">
+	  <input type="submit" value="submit" class="button">
+	  </div> 
+	  <div class="display">
+	  <h1 class="name"> </h1> 
+	  <p class ="desc"></p>
+	  <p class="temp"></p>
+	  </div>
+	  </body>
 </html>
