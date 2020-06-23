@@ -1,9 +1,12 @@
+
+
 // Get the current weather conditions based on city input
-var button = document.querySelector('.button');
-var inputValue = document.querySelector('.inputValue');
-var name = document.querySelector('.name');
-var desc = document.querySelector('.desc');
-var temp = document.querySelector('.temp');
+	var button = document.querySelector('.button');
+	var inputValue = document.querySelector('.inputValue');
+	var name = document.querySelector('.name');
+	var desc = document.querySelector('.desc');
+	var temp = document.querySelector('.temp');
+
 
 // Display results of city input by user 
 button.addEventListener('click', function() {
@@ -23,6 +26,7 @@ button.addEventListener('click', function() {
     .catch(err => alert("Incorrect City Name!"))
 })
 
+
 //Get the current time per user + AM PM format
 function earthClock () {;
 	var eClock = new Date(); 
@@ -33,6 +37,7 @@ function earthClock () {;
 
 
     var amPM = (hours < 12) ? "AM" : "PM";
+
 
 //Display the current time 
     document.getElementById('time').innerHTML = 
