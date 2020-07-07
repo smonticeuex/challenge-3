@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html>
-	<head>
+	 <head>
 		<meta charset="utf-8">
 		<title>SPACE X EARTH Interface </title>
-		<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+		<script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
 		<script src="scripts/main.js" defer></script>
-	</head>
+		<link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+		
+		<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css" />
+	 </head>
 	
-	 <header>
-		<ul>
-		 <b> S p a c e X </b>
-		  <li><a >EARTH</a></li>
-		  <li><a >Metrics</a></li>
-		  <li><a >Supplies</a></li>
-		  <li><a >Ships Environment</a></li>
-		  <li><a>Ships Parameters</a></li>
-		</ul>
-	 </header>
 	 
+	 <body>
+	    <div id="container"></div>
+	      <h1> EARTH'S WEATHER CONDITIONS </h1>
+	    
+		<div class="input">
+	      <input type="text" class="inputValue" placeholder="Enter A City">
+	      <input type="submit" value="submit" class="button">
+	    </div> 
+		
+	    <div class="display">
+	      <h1 class="name"> </h1> 
+	        <p class ="desc" ></p>
+	        <p class="temp"></p>
+	    </div>
+	 </body>
 	 
-	 <body onload="earthClock()">
-	 <div id="time"></div>
-	 <h1> EARTH'S WEATHER CONDITIONS </h1>
-	 <div class="input">
-	  <input type="text" class="inputValue" placeholder="Enter A City">
-	  <input type="submit" value="submit" class="button">
-	  </div> 
-	  <div class="display">
-	  <h1 class="name"> </h1> 
-	  <p class ="desc" ></p>
-	  <p class="temp"></p>
-	  </div>
-	  </body>
+	 <div id="map"></div>
+		
 </html>
